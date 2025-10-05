@@ -1,0 +1,183 @@
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(120deg, #e6ffe6 0%, #ffe0b2 100%);
+  color: #2e2e2e;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background: #c8e6c9;
+  padding: 1em;
+  display: flex;
+  gap: 1em;
+  justify-content: flex-start;
+}
+nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 15px;
+  transition: background 0.3s;
+}
+nav a.right {
+  margin-left: auto;
+  background: #ffecb2;
+} 
+nav a.left{
+  margin-right: auto;
+  background: #ffecb2;
+} 
+nav a:hover {
+  background: #b3e8ca;
+}
+header {
+  text-align: center;
+  padding: 2em 0;
+  background: #fff9e6ec;
+}
+.product-grid {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2em;
+}
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px #e6e6e6;
+  padding: 1em;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card img {
+  width: 120px;
+  border-radius: 10px;
+}
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 22px #b3e8ca80;
+}
+.animate-in {
+  animation: fadeInUp 1s ease;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+button {
+  background: #ffd59e;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  color: #363636;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 0.5em;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #ffde73;
+}
+footer {
+  background: #c8e6c955;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 3em;
+}
+.about-section, .contact-section, .recycle-section, .product-section {
+  background: #f6fdf6;
+  padding: 2em 1em;
+  border-radius: 20px;
+  margin: 2em auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px #e0e0e0;
+}
+
+.team {
+  display: flex;
+  gap: 2em;
+  margin-top: 2em;
+}
+.member-card {
+  padding: 0.5em 1em;
+  background: #e3fcec;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 2px 6px #ddd;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 400px;
+  margin: 2em auto;
+}
+.contact-form label {
+  margin: 0.2em 0;
+}
+.contact-form input, .contact-form textarea {
+  padding: 0.7em;
+  border-radius: 10px;
+  border: 1px solid #b5e1d0;
+  font-size: 1em;
+}
+.contact-form button {
+  background: #c8e6c9;
+  color: #222;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8em 1.5em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.contact-form button:hover {
+  background: #ffd59e;
+}
+.contact-info {
+  margin-top: 3em;
+  font-size: 1.08em;
+  color: #4b8c6f;
+  text-align: left;
+}
+
+.laptop-card {
+  background: #fff;
+  padding: 1em 1.5em;
+  margin: 1em;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px #d4f5e8;
+  width: 275px;
+  display: inline-block;
+  vertical-align: top;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.laptop-card h3 {
+  color: #0b7a49;
+}
+.laptop-card ul {
+  text-align: left;
+  margin: 0.7em 0;
+  color: #222;
+  padding: 0 0 0 1em;
+}
+.laptop-card img {
+  border-radius: 14px;
+  margin-bottom: 0.5em;
+}
+.laptop-card span {
+  display: block;
+  margin-top: 1em;
+  background: #e3fcec;
+  color: #20694c;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0.4em;
+}
+.laptop-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px #c8e6c9a8; 
+}
+ 
